@@ -90,11 +90,11 @@ public class Scope {
 		throw new UnsupportedOperationException();
 	}
 
-	public Callback0 $watch(String watchExpression, Callback2<Object, Object> listener) {
+	public <T> Callback0 $watch(String watchExpression, Callback2<T, T> listener) {
 		throw new UnsupportedOperationException();
 	}
 
-	public Callback0 $watch(String watchExpression, Callback2<Object, Object> listener, boolean objectEquality) {
+	public <T> Callback0 $watch(String watchExpression, Callback2<T, T> listener, boolean objectEquality) {
 		throw new UnsupportedOperationException();
 	}
 
