@@ -1,10 +1,12 @@
 package org.stjs.bridge.angularjs;
 
 import org.stjs.javascript.Array;
+import org.stjs.javascript.annotation.SyntheticType;
 import org.stjs.javascript.functions.Callback0;
 import org.stjs.javascript.functions.Function0;
 
-public class Module {
+@SyntheticType
+public final class Module {
 	public String name;
 
 	public Array<String> requires;

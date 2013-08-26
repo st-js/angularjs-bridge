@@ -1,12 +1,14 @@
 package org.stjs.bridge.angularjs;
 
 import org.stjs.javascript.Map;
+import org.stjs.javascript.annotation.SyntheticType;
 import org.stjs.javascript.functions.Callback0;
 import org.stjs.javascript.functions.Callback1;
 import org.stjs.javascript.functions.Callback2;
 import org.stjs.javascript.functions.Callback3;
 import org.stjs.javascript.functions.Function1;
 
+@SyntheticType
 public class Scope {
 	public Long $id;
 
@@ -106,8 +108,7 @@ public class Scope {
 		throw new UnsupportedOperationException();
 	}
 
-	public <T extends Scope> Callback0 $watch(Function1<T, Object> watchExpression, Callback2<Object, Object> listener,
-			boolean objectEquality) {
+	public <T extends Scope> Callback0 $watch(Function1<T, Object> watchExpression, Callback2<Object, Object> listener, boolean objectEquality) {
 		throw new UnsupportedOperationException();
 	}
 
@@ -115,8 +116,7 @@ public class Scope {
 		throw new UnsupportedOperationException();
 	}
 
-	public <T extends Scope> Callback0 $watchCollection(Function1<T, Object> watchExpression,
-			Callback2<Object, Object> listener) {
+	public <T extends Scope> Callback0 $watchCollection(Function1<T, Object> watchExpression, Callback2<Object, Object> listener) {
 		throw new UnsupportedOperationException();
 	}
 
