@@ -24,100 +24,55 @@ public class Scope {
 		//
 	}
 
-	public <T> T $apply(String expr) {
-		throw new UnsupportedOperationException();
-	}
+	public native <T> T $apply(String expr);
 
-	public <T> T $apply(Function1<Scope, T> expr) {
-		throw new UnsupportedOperationException();
-	}
+	public native <T> T $apply(Function1<Scope, T> expr);
 
-	public AngularEvent $broadcast(String name, Object... args) {
-		throw new UnsupportedOperationException();
-	}
+	public native AngularEvent $broadcast(String name, Object... args);
 
-	public void $destroy() {
-		throw new UnsupportedOperationException();
-	}
+	public native void $destroy();
 
-	public void $digest() {
-		throw new UnsupportedOperationException();
-	}
+	public native void $digest();
 
-	public AngularEvent $emit(String name, Object... args) {
-		throw new UnsupportedOperationException();
-	}
+	public native AngularEvent $emit(String name, Object... args);
 
-	public <T> T eval(String expr) {
-		throw new UnsupportedOperationException();
-	}
+	public native <T> T eval(String expr);
 
-	public <T> T eval(Function1<Scope, T> expr) {
-		throw new UnsupportedOperationException();
-	}
+	public native <T> T eval(Function1<Scope, T> expr);
 
-	public void evalAsync(String expr) {
-		throw new UnsupportedOperationException();
-	}
+	public native void evalAsync(String expr);
 
-	public <T> void evalAsync(Function1<Scope, T> expr) {
-		throw new UnsupportedOperationException();
-	}
+	public native <T> void evalAsync(Function1<Scope, T> expr);
 
-	public <T extends Scope> T $new() {
-		throw new UnsupportedOperationException();
-	}
+	public native <T extends Scope> T $new();
 
-	public <T extends Scope> T $new(boolean isolate) {
-		throw new UnsupportedOperationException();
-	}
+	public native <T extends Scope> T $new(boolean isolate);
 
-	public Callback0 $on(String name, Callback1<AngularEvent> listener) {
-		throw new UnsupportedOperationException();
-	}
+	public native Callback0 $on(String name, Callback1<AngularEvent> listener);
 
-	public <P1> Callback0 $on(String name, Callback2<AngularEvent, P1> listener) {
-		throw new UnsupportedOperationException();
-	}
+	public native <P1> Callback0 $on(String name, Callback2<AngularEvent, P1> listener);
 
-	public <P1, P2> Callback0 $on(String name, Callback3<AngularEvent, P1, P2> listener) {
-		throw new UnsupportedOperationException();
-	}
+	public native <P1, P2> Callback0 $on(String name, Callback3<AngularEvent, P1, P2> listener);
 
-	public Callback0 $on(String name, Object listener) {
-		throw new UnsupportedOperationException();
-	}
+	public native Callback0 $on(String name, Object listener);
 
-	public Callback0 $watch(String watchExpression) {
-		throw new UnsupportedOperationException();
-	}
+	public native Callback0 $watch(String watchExpression);
 
-	public <T> Callback0 $watch(String watchExpression, Callback2<T, T> listener) {
-		throw new UnsupportedOperationException();
-	}
+	public native <T> Callback0 $watch(String watchExpression, Callback2<T, T> listener);
 
-	public <T> Callback0 $watch(String watchExpression, Callback2<T, T> listener, boolean objectEquality) {
-		throw new UnsupportedOperationException();
-	}
+	public native <T> Callback0 $watch(String watchExpression, Callback2<T, T> listener, boolean objectEquality);
 
-	public <T extends Scope> Callback0 $watch(Function1<T, Object> watchExpression) {
-		throw new UnsupportedOperationException();
-	}
+	public native <T extends Scope> Callback0 $watch(Function1<T, Object> watchExpression);
 
-	public <T extends Scope> Callback0 $watch(Function1<T, Object> watchExpression, Callback2<Object, Object> listener) {
-		throw new UnsupportedOperationException();
-	}
+	public native <T extends Scope> Callback0 $watch(Function1<T, Object> watchExpression,
+			Callback2<Object, Object> listener);
 
-	public <T extends Scope> Callback0 $watch(Function1<T, Object> watchExpression, Callback2<Object, Object> listener, boolean objectEquality) {
-		throw new UnsupportedOperationException();
-	}
+	public native <T extends Scope> Callback0 $watch(Function1<T, Object> watchExpression,
+			Callback2<Object, Object> listener, boolean objectEquality);
 
-	public Callback0 $watchCollection(String watchExpression, Callback2<Object, Object> listener) {
-		throw new UnsupportedOperationException();
-	}
+	public native Callback0 $watchCollection(String watchExpression, Callback2<Object, Object> listener);
 
-	public <T extends Scope> Callback0 $watchCollection(Function1<T, Object> watchExpression, Callback2<Object, Object> listener) {
-		throw new UnsupportedOperationException();
-	}
+	public native <T extends Scope> Callback0 $watchCollection(Function1<T, Object> watchExpression,
+			Callback2<Object, Object> listener);
 
 }

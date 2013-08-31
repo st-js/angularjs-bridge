@@ -16,12 +16,12 @@ public abstract class NgModelController {
 	public boolean $dirty;
 	public boolean $invalid;
 
-	public abstract void $setValidity(String validationErrorKey, boolean isValid);
+	public native void $setValidity (String validationErrorKey, boolean isValid);
 
-	public abstract void $setViewValue(String value);
+	public native void $setViewValue (String value);
 
 	public Callback0 $render;
 
-	public abstract void $setPristine();
+	public native void $setPristine ();
 
 }

@@ -16,83 +16,50 @@ import org.stjs.javascript.jquery.JQueryCore;
 public class GlobalAngularJS {
 	public static Angular angular;
 
-	public static void $anchorScroll() {
-		throw new UnsupportedOperationException();
-	}
+	public native static void $anchorScroll();
 
 	public static Animate $animate;
 
-	public static Cache $cacheFactory(String name) {
-		throw new UnsupportedOperationException();
-	}
+	public native static Cache $cacheFactory(String name);
 
-	public static Cache $cacheFactory(String name, CacheOptions options) {
-		throw new UnsupportedOperationException();
-	}
+	public native static Cache $cacheFactory(String name, CacheOptions options);
 
-	public static Function2<Element, Scope, Function2<Element, Element, Scope>> $compile(Element element,
-			Function2<Element, Element, Scope> transclude, int maxPriority) {
-		throw new UnsupportedOperationException();
-	}
+	public native static Function2<Element, Scope, Function2<Element, Element, Scope>> $compile(Element element,
+			Function2<Element, Element, Scope> transclude, int maxPriority);
 
-	public static Function2<Element, Scope, Function2<Element, Element, Scope>> $compile(String element,
-			Function2<Element, Element, Scope> transclude, int maxPriority) {
-		throw new UnsupportedOperationException();
-	}
+	public native static Function2<Element, Scope, Function2<Element, Element, Scope>> $compile(String element,
+			Function2<Element, Element, Scope> transclude, int maxPriority);
 
-	public static Function1<Element, Scope> $compile(Element element) {
-		throw new UnsupportedOperationException();
-	}
+	public native static Function1<Element, Scope> $compile(Element element);
 
-	public static Function1<Element, Scope> $compile(String element) {
-		throw new UnsupportedOperationException();
-	}
+	public native static Function1<Element, Scope> $compile(String element);
 
-	public static <T> T $controller(String constructor, Map<String, ? extends Object> locals) {
-		throw new UnsupportedOperationException();
-	}
+	public native static <T> T $controller(String constructor, Map<String, ? extends Object> locals);
 
-	public static <T> T $controller(Callback0 constructor, Map<String, ? extends Object> locals) {
-		throw new UnsupportedOperationException();
-	}
+	public native static <T> T $controller(Callback0 constructor, Map<String, ? extends Object> locals);
 
 	public static JQueryCore<JQueryCore<?>> $document;
 
-	public static void $exceptionHandler(Exception error) {
-		throw new UnsupportedOperationException();
-	}
+	public native static void $exceptionHandler(Exception error);
 
-	public static void $exceptionHandler(Exception error, Object cause) {
-		throw new UnsupportedOperationException();
-	}
+	public native static void $exceptionHandler(Exception error, Object cause);
 
-	public static Filter $filter(String filterName) {
-		throw new UnsupportedOperationException();
-	}
+	public native static Filter $filter(String filterName);
 
-	public static HttpPromise $http(HttpConfig config) {
-		throw new UnsupportedOperationException();
-	}
+	public native static HttpPromise $http(HttpConfig config);
 
-	public static <T> Function1<String, T> $interpolate(String text) {
-		throw new UnsupportedOperationException();
-	}
+	public native static <T> Function1<String, T> $interpolate(String text);
 
-	public static <T> Function1<String, T> $interpolate(String text, boolean mustHaveExpression) {
-		throw new UnsupportedOperationException();
-	}
+	public native static <T> Function1<String, T> $interpolate(String text, boolean mustHaveExpression);
 
-	public static <T> Function1<String, T> $interpolate(String text, boolean mustHaveExpression, String trustedContext) {
-		throw new UnsupportedOperationException();
-	}
+	public native static <T> Function1<String, T> $interpolate(String text, boolean mustHaveExpression,
+			String trustedContext);
 
 	public static Locale $locale;
 
 	public static Location $location;
 
-	public static <T> CompiledExpression<T> $parse(String text) {
-		throw new UnsupportedOperationException();
-	}
+	public native static <T> CompiledExpression<T> $parse(String text);
 
 	public static Q $q;
 
@@ -106,23 +73,15 @@ public class GlobalAngularJS {
 
 	public static Cache $templateCache;
 
-	public static <T> Promise<T> $timeout(Function0<T> fn) {
-		throw new UnsupportedOperationException();
-	}
+	public native static <T> Promise<T> $timeout(Function0<T> fn);
 
-	public static <T> Promise<T> $timeout(Function0<T> fn, int delay) {
-		throw new UnsupportedOperationException();
-	}
+	public native static <T> Promise<T> $timeout(Function0<T> fn, int delay);
 
-	public static <T> Promise<T> $timeout(Function0<T> fn, int delay, boolean invokeApply) {
-		throw new UnsupportedOperationException();
-	}
+	public native static <T> Promise<T> $timeout(Function0<T> fn, int delay, boolean invokeApply);
 
 	public static Timeout $timeout;
 
 	public static Window $window;
 
-	public static HttpPromise $timeout(Callback0 callback, long delay) {
-		throw new UnsupportedOperationException();
-	}
+	public native static HttpPromise $timeout(Callback0 callback, long delay);
 }

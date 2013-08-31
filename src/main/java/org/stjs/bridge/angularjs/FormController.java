@@ -7,15 +7,15 @@ import org.stjs.javascript.dom.Element;
 
 @SyntheticType
 public abstract class FormController {
-	public abstract void $addControl();
+	public native void $addControl ();
 
-	public abstract void $removeControl();
+	public native void $removeControl ();
 
-	public abstract void $setDirty();
+	public native void $setDirty ();
 
-	public abstract void $setPristine();
+	public native void $setPristine ();
 
-	public abstract void $setValidity();
+	public native void $setValidity ();
 
 	public boolean $pristine;
 

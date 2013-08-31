@@ -6,7 +6,7 @@ import org.stjs.javascript.annotation.SyntheticType;
 public abstract class Deferred<T> {
 	public Promise<T> promise;
 
-	public abstract Promise<T> resolve(Object value);
+	public native Promise<T> resolve (Object value);
 
-	public abstract Promise<T> reject(Object reason);
+	public native Promise<T> reject (Object reason);
 }

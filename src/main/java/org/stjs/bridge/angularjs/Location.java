@@ -9,14 +9,14 @@ import org.stjs.javascript.annotation.STJSBridge;
  */
 @STJSBridge
 public abstract class Location {
-    public abstract String path();
-    public abstract Location path(String path);
-    public abstract String hash();
-    public abstract Location hash(String path);
-    public abstract <T> T search();
-    public abstract Location search(Map<String, Object> hash);
-    public abstract Location search(Object hash);
+    public native String path ();
+    public native Location path (String path);
+    public native String hash ();
+    public native Location hash (String path);
+    public native <T> T search ();
+    public native Location search (Map<String, Object> hash);
+    public native Location search (Object hash);
     // will override only a single search parameter. If the value is null, the parameter will be deleted.
-    public abstract Location search(String parameter, Object parameterValue);
-    public abstract Location replace();
+    public native Location search (String parameter, Object parameterValue);
+    public native Location replace ();
 }

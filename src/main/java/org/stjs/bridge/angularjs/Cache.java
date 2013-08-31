@@ -2,16 +2,16 @@ package org.stjs.bridge.angularjs;
 
 public abstract class Cache {
 
-	public abstract CacheInfo info();
+	public native CacheInfo info ();
 
-	public abstract <T> T put(String key, T value);
+	public native <T> T put (String key, T value);
 
-	public abstract <T> T get(String key);
+	public native <T> T get (String key);
 
-	public abstract void remove(String key);
+	public native void remove (String key);
 
-	public abstract void removeAll();
+	public native void removeAll ();
 
-	public abstract void destroy();
+	public native void destroy ();
 
 }

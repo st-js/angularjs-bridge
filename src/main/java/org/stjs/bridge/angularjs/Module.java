@@ -11,43 +11,23 @@ public final class Module {
 
 	public Array<String> requires;
 
-	public <F> F animation(String name, F func) {
-		throw new UnsupportedOperationException();
-	}
+	public native <F> F animation(String name, F func);
 
-	public void config(Callback0 configFn) {
-		throw new UnsupportedOperationException();
-	}
+	public native void config(Callback0 configFn);
 
-	public void constant(String name, Object object) {
-		throw new UnsupportedOperationException();
-	}
+	public native void constant(String name, Object object);
 
-	public void controller(String name, Object constructor) {
-		throw new UnsupportedOperationException();
-	}
+	public native void controller(String name, Object constructor);
 
-	public <T> void directive(String name, Function0<Object> directiveFactory) {
-		throw new UnsupportedOperationException();
-	}
+	public native <T> void directive(String name, Function0<Object> directiveFactory);
 
-	public <T> void factory(String name, Object providerFunction) {
-		throw new UnsupportedOperationException();
-	}
+	public native <T> void factory(String name, Object providerFunction);
 
-	public void filter(String name, Object filterFactory) {
-		throw new UnsupportedOperationException();
-	}
+	public native void filter(String name, Object filterFactory);
 
-	public void provider(String name, Object providerType) {
-		throw new UnsupportedOperationException();
-	}
+	public native void provider(String name, Object providerType);
 
-	public void run(Callback0 initializationFn) {
-		throw new UnsupportedOperationException();
-	}
+	public native void run(Callback0 initializationFn);
 
-	public void value(String name, Object object) {
-		throw new UnsupportedOperationException();
-	}
+	public native void value(String name, Object object);
 }

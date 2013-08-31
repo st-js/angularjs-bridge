@@ -2,16 +2,16 @@ package org.stjs.bridge.angularjs;
 
 import org.stjs.javascript.Array;
 
-public interface Injector {
-	public Array<String> annotate(Object function);
+public final class Injector {
+	public native Array<String> annotate(Object function);
 
-	public <T> T get(String name);
+	public native <T> T get(String name);
 
-	public boolean has(String name);
+	public native boolean has(String name);
 
-	public <T> T instantiate(Class<T> type, Object... locals);
+	public native <T> T instantiate(Class<T> type, Object... locals);
 
-	public Object invoke(Object function);
+	public native Object invoke(Object function);
 
-	public Object invoke(Object function, Object self, Object... arguments);
+	public native Object invoke(Object function, Object self, Object... arguments);
 }

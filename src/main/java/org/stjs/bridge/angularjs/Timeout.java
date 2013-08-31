@@ -6,5 +6,5 @@ import org.stjs.javascript.annotation.SyntheticType;
 @JavascriptFunction
 @SyntheticType
 public abstract class Timeout {
-	public abstract boolean cancel(Promise<?> promise);
+	public native boolean cancel (Promise<?> promise);
 }

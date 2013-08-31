@@ -5,25 +5,15 @@ import org.stjs.javascript.Map;
 import org.stjs.javascript.annotation.STJSBridge;
 
 @STJSBridge
-public class Q {
-	public <T> Promise<T> reject(Object value) {
-		throw new UnsupportedOperationException();
-	}
+public final class Q {
+	public native <T> Promise<T> reject(Object value);
 
-	public <T> Deferred<T> defer() {
-		throw new UnsupportedOperationException();
-	}
+	public native <T> Deferred<T> defer();
 
-	public <T> Promise<T> all(Array<Promise<T>> promises) {
-		throw new UnsupportedOperationException();
-	}
+	public native <T> Promise<T> all(Array<Promise<T>> promises);
 
-	public <T> Promise<T> all(Map<String, Promise<T>> promises) {
-		throw new UnsupportedOperationException();
-	}
+	public native <T> Promise<T> all(Map<String, Promise<T>> promises);
 
-	public <T> Promise<T> when(Object promise) {
-		throw new UnsupportedOperationException();
-	}
+	public native <T> Promise<T> when(Object promise);
 
 }
