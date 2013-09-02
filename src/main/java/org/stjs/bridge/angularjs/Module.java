@@ -3,7 +3,7 @@ package org.stjs.bridge.angularjs;
 import org.stjs.javascript.Array;
 import org.stjs.javascript.annotation.SyntheticType;
 import org.stjs.javascript.functions.Callback0;
-import org.stjs.javascript.functions.Function0;
+import org.stjs.javascript.functions.Function;
 
 @SyntheticType
 public final class Module {
@@ -19,7 +19,7 @@ public final class Module {
 
 	public native void controller(String name, Object constructor);
 
-	public native <T> void directive(String name, Function0<Object> directiveFactory);
+	public native <T> void directive(String name, Function<Object> directiveFactory);
 
 	public native <T> void factory(String name, Object providerFunction);
 
