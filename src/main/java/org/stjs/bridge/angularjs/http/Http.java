@@ -5,10 +5,14 @@
 package org.stjs.bridge.angularjs.http;
 
 import org.stjs.javascript.annotation.STJSBridge;
+import org.stjs.javascript.annotation.SyntheticType;
 
 @STJSBridge
-public interface Http {
-    HttpPromise put(String url, Object data);
-    HttpPromise post(String url, Object data);
-    HttpPromise post(String url, Object data, HttpConfig config);
+@SyntheticType
+public final class Http {
+	public native HttpPromise put(String url, Object data);
+
+	public native HttpPromise post(String url, Object data);
+
+	public native HttpPromise post(String url, Object data, HttpConfig config);
 }

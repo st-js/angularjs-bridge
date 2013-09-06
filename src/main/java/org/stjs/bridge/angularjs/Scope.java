@@ -58,21 +58,18 @@ public class Scope {
 
 	public native Callback0 $watch(String watchExpression);
 
-	public native <T> Callback0 $watch(String watchExpression, Callback2<T, T> listener);
+	public native <T> Callback0 $watch(String watchExpression, Watcher<T> listener);
 
-	public native <T> Callback0 $watch(String watchExpression, Callback2<T, T> listener, boolean objectEquality);
+	public native <T> Callback0 $watch(String watchExpression, Watcher<T> listener, boolean objectEquality);
 
 	public native <T extends Scope> Callback0 $watch(Function1<T, Object> watchExpression);
 
-	public native <T extends Scope> Callback0 $watch(Function1<T, Object> watchExpression,
-			Callback2<Object, Object> listener);
+	public native <T extends Scope> Callback0 $watch(Function1<T, Object> watchExpression, Watcher<Object> listener);
 
-	public native <T extends Scope> Callback0 $watch(Function1<T, Object> watchExpression,
-			Callback2<Object, Object> listener, boolean objectEquality);
+	public native <T extends Scope> Callback0 $watch(Function1<T, Object> watchExpression, Watcher<Object> listener, boolean objectEquality);
 
-	public native Callback0 $watchCollection(String watchExpression, Callback2<Object, Object> listener);
+	public native Callback0 $watchCollection(String watchExpression, Watcher<Object> listener);
 
-	public native <T extends Scope> Callback0 $watchCollection(Function1<T, Object> watchExpression,
-			Callback2<Object, Object> listener);
+	public native <T extends Scope> Callback0 $watchCollection(Function1<T, Object> watchExpression, Watcher<Object> listener);
 
 }

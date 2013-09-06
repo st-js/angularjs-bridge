@@ -1,21 +1,15 @@
 package org.stjs.bridge.angularjs;
 
-import org.stjs.bridge.angularjs.http.HttpConfig;
-import org.stjs.bridge.angularjs.http.HttpPromise;
-import org.stjs.javascript.Map;
-import org.stjs.javascript.Window;
 import org.stjs.javascript.annotation.GlobalScope;
-import org.stjs.javascript.dom.Element;
-import org.stjs.javascript.functions.Callback0;
-import org.stjs.javascript.functions.Function0;
-import org.stjs.javascript.functions.Function1;
-import org.stjs.javascript.functions.Function2;
-import org.stjs.javascript.jquery.JQueryCore;
 
 @GlobalScope
-public class GlobalAngularJS {
+public final class GlobalAngularJS {
 	public static Angular angular;
 
+	/**
+	 * THESE ARE AVAILABLE VIA INJECTION
+	 */
+	/*
 	public native static void $anchorScroll();
 
 	public static Animate $animate;
@@ -84,4 +78,5 @@ public class GlobalAngularJS {
 	public static Window $window;
 
 	public native static HttpPromise $timeout(Callback0 callback, long delay);
+	*/
 }

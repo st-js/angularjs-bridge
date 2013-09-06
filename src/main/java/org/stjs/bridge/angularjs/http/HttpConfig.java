@@ -6,11 +6,11 @@ import org.stjs.javascript.annotation.SyntheticType;
 
 @SyntheticType
 @STJSBridge
-public class HttpConfig {
-    public String method;
-    public String url;
-    public Map<? extends String, ?> params;
-    public Map<? extends String, ?> headers;
-    public Object data;
-    // there are more. see: http://docs.angularjs.org/api/ng.$http
+public final class HttpConfig {
+	public String method;
+	public String url;
+	public Map<? extends String, ?> params;
+	public Map<? extends String, ?> headers;
+	public Object data;
+	// there are more. see: http://docs.angularjs.org/api/ng.$http
 }

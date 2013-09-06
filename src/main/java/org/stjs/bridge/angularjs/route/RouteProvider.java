@@ -5,9 +5,12 @@
 package org.stjs.bridge.angularjs.route;
 
 import org.stjs.javascript.annotation.STJSBridge;
+import org.stjs.javascript.annotation.SyntheticType;
 
 @STJSBridge
-public interface RouteProvider {
-    RouteProvider when(String url, RouteParameter parameters);
-    RouteProvider otherwise(RouteParameter parameters);
+@SyntheticType
+public final class RouteProvider {
+	public native RouteProvider when(String url, RouteParameter parameters);
+
+	public native RouteProvider otherwise(RouteParameter parameters);
 }
