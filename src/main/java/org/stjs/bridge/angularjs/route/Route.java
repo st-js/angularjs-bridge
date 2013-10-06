@@ -1,8 +1,10 @@
 package org.stjs.bridge.angularjs.route;
 
 import org.stjs.javascript.annotation.STJSBridge;
+import org.stjs.javascript.annotation.SyntheticType;
 
 @STJSBridge
-public interface Route {
-    
+@SyntheticType
+public final class Route {
+	public Object current;
 }

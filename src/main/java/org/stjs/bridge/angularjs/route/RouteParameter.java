@@ -7,10 +7,10 @@ import org.stjs.javascript.annotation.SyntheticType;
 
 @STJSBridge
 @SyntheticType
-public class RouteParameter {
-    public String templateUrl;
-    public String redirectTo;
-    public Array<?> controller;
-    public Map<String, ?> resolve;
-    public boolean reloadOnSearch;
+public final class RouteParameter {
+	public String templateUrl;
+	public String redirectTo;
+	public Array<?> controller;
+	public Map<String, ?> resolve;
+	public boolean reloadOnSearch;
 }

@@ -1,4 +1,4 @@
-package org.stjs.bridge.angularjs;
+package org.stjs.bridge.angularjs.route;
 
 import org.stjs.javascript.annotation.STJSBridge;
 
