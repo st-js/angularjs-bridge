@@ -21,7 +21,7 @@
 		<dependency>
 			<groupId>org.st-js.bridge</groupId>
 			<artifactId>jquery</artifactId>
-			<version>1.9.1.bv1</version>
+			<version>1.9.1.bv2-SNAPSHOT</version>
 		</dependency>		
 	</dependencies>
 

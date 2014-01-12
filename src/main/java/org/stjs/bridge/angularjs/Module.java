@@ -3,6 +3,7 @@ package org.stjs.bridge.angularjs;
 import org.stjs.javascript.Array;
 import org.stjs.javascript.annotation.SyntheticType;
 import org.stjs.javascript.functions.Callback;
+import org.stjs.javascript.functions.Function0;
 
 @SyntheticType
 @SuppressWarnings("hiding")
@@ -23,9 +24,13 @@ public final class Module {
 
 	public native void directive(String name, Object directiveFactory);
 
+	public native void directive(String name, Function0<Object> simpleConstructor);
+
 	public native void directive(String name, Array<? extends Object> decoratedFactory);
 
 	public native void factory(String name, Object providerFunction);
+
+	public native void factory(String name, Function0<Object> simpleConstructor);
 
 	public native void filter(String name, Object filterFactory);
 
