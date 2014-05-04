@@ -7,4 +7,6 @@ import org.stjs.javascript.annotation.SyntheticType;
 @SyntheticType
 public final class Route {
 	public Object current;
+
+	public native void reload();
 }

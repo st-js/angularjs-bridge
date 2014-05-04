@@ -1,8 +1,10 @@
 package org.stjs.bridge.angularjs;
 
+import org.stjs.bridge.angularjs.route.RouteProvider;
 import org.stjs.javascript.Array;
 import org.stjs.javascript.annotation.SyntheticType;
 import org.stjs.javascript.functions.Callback;
+import org.stjs.javascript.functions.Callback2;
 import org.stjs.javascript.functions.Function0;
 
 @SyntheticType
@@ -15,6 +17,8 @@ public final class Module {
 	public native void animation(String name, Object func);
 
 	public native void config(Callback configFn);
+
+	public native void config(Callback2<LocationProvider, RouteProvider> configFn);
 
 	public native void constant(String name, Object object);
 

@@ -10,4 +10,6 @@ import org.stjs.javascript.annotation.STJSBridge;
 @STJSBridge
 public class HttpProvider {
 	public Array<Object> responseInterceptors;
+
+	public HttpDefaultConfig defaults;
 }

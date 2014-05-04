@@ -4,12 +4,14 @@ import org.stjs.javascript.Map;
 import org.stjs.javascript.annotation.SyntheticType;
 
 @SyntheticType
-public class HttpConfig {
+public class HttpDefaultConfig {
 	public String method;
 	public String url;
 	public Map<String, Object> params;
-	public Map<String, Object> headers;
+	public HttpHeadersConfig headers;
+
 	public Object data;
+
 	// transformRequest – {function(data, headersGetter)|Array.<function(data, headersGetter)>} – transform function or
 	// an array of such functions. The transform function takes the http request body and headers and returns its
 	// transformed (typically serialized) version.
@@ -27,4 +29,5 @@ public class HttpConfig {
 	public int timeout;
 
 	public boolean withCredentials;
+
 }

@@ -1,16 +1,20 @@
 package org.stjs.bridge.angularjs;
 
 import org.stjs.javascript.annotation.SyntheticType;
+import org.stjs.javascript.annotation.Template;
+import org.stjs.javascript.functions.Callback1;
 import org.stjs.javascript.functions.Function1;
 
 @SyntheticType
-public abstract class Promise<T> {
-	public native Promise<T> then (Function1<T, T> successCallback);
+public class Promise<T> {
+	public native <V> Promise<V> then(Function1<T, V> successCallback);
 
-	public native Promise<T> then (Function1<T, T> successCallback, Function1<T, Object> errorCallback);
+	public native <V> Promise<V> then(Function1<T, V> successCallback, Function1<T, V> errorCallback);
 
 	// catch/finally are keywords -> you to call them with object['catch'] or object['finally']
-	// public native Promise<T> catch (Function1<T,Object>errorCallback);
+	@Template("prefix")
+	public native <V> Promise<V> $catch(Function1<T, V> errorCallback);
 
-	// public native void finally (Callback1<T> callback);
+	@Template("prefix")
+	public native void $finally(Callback1<T> callback);
 }
