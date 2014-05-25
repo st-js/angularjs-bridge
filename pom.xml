@@ -4,7 +4,7 @@
 
 	<groupId>org.st-js.bridge</groupId>
 	<artifactId>angularjs</artifactId>
-	<version>1.0.7.bv4-SNAPSHOT</version>
+	<version>1.2.16.bv0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>Strongly-typed JS - Angular JS Bridge Library</name>
 
