@@ -3,7 +3,6 @@ package org.stjs.bridge.angularjs;
 import org.stjs.javascript.Array;
 import org.stjs.javascript.dom.Element;
 import org.stjs.javascript.functions.Callback2;
-import org.stjs.javascript.jquery.JQueryCore;
 
 public final class Angular {
 
@@ -15,7 +14,9 @@ public final class Angular {
 
 	public native <T> T copy(T source, T destination);
 
-	public native <T extends JQueryCore<T>> T element(Element element);
+	public native <T extends AngularJQueryCore<T>> T element(Element element);
+
+	public native <T extends AngularJQueryCore<T>> T element(String selector);
 
 	public native boolean equals(Object o1, Object o2);
 
